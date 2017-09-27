@@ -1,0 +1,7 @@
+.idea/
+
+android/build
+RNSegmentIOAnalytics.xcodeproj/xcuserdata
+node_modules/
+
+ios/Pods/

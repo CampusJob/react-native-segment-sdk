@@ -1,0 +1,48 @@
+{
+  "name": "react-native-segment-sdk",
+  "version": "0.1.1",
+  "description": "The Ananlytics API you've always wanted. Now for React Native. Powered by Segment.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CampusJob/react-native-segment-sdk.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-components",
+    "analytics",
+    "segment",
+    "segmentio",
+    "ios",
+    "android"
+  ],
+  "authors": [
+    {
+      "name": "Tal Kain",
+      "email": "tal@kain.net",
+      "url": "https://www.smore.com"
+    }, {
+      "name": "Tony Xiao",
+      "email": "tonyx.ca@gmail.com",
+      "url": "https://tonyxiao.com"
+    }, {
+      "name": "Arun Venkatesan",
+      "email": "blured2000@live.com",
+      "url": "http://arunvenkatesan.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonyxiao/react-native-analytics/issues"
+  },
+  "maintainers": [
+    {
+      "name": "blured2000",
+      "email": "blured2000@live.com"
+    }
+  ],
+  "homepage": "https://github.com/CampusJob/react-native-segment-sdk",
+  "peerDependencies": {
+    "react-native": ">=0.7.0"
+  }
+}
