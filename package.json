@@ -1,6 +1,6 @@
 {
   "name": "react-native-segment-sdk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "The Analytics API you've always wanted. Now for React Native. Powered by Segment.",
   "repository": {
     "type": "git",
