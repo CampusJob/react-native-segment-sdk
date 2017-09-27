@@ -1,7 +1,7 @@
 {
   "name": "react-native-segment-sdk",
-  "version": "0.1.1",
-  "description": "The Ananlytics API you've always wanted. Now for React Native. Powered by Segment.",
+  "version": "0.1.2",
+  "description": "The Analytics API you've always wanted. Now for React Native. Powered by Segment.",
   "repository": {
     "type": "git",
     "url": "git@github.com:CampusJob/react-native-segment-sdk.git"

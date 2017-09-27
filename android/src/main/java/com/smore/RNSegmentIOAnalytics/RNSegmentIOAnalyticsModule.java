@@ -65,6 +65,17 @@ public class RNSegmentIOAnalyticsModule extends ReactContextBaseJavaModule {
   }
 
   /*
+   https://segment.com/docs/libraries/android/#alias
+   */
+  @ReactMethod
+  public void alias(String userId) {
+    if (!mEnabled) {
+      return;
+    }
+    mAnalytics.alias(userId);
+  }
+
+  /*
    https://segment.com/docs/libraries/android/#track
    */
   @ReactMethod

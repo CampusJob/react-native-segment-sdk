@@ -30,11 +30,19 @@ RCT_EXPORT_METHOD(identify:(NSString*)userId traits:(NSDictionary *)traits) {
 }
 
 /*
+ https://segment.com/docs/libraries/ios/#alias
+ */
+RCT_EXPORT_METHOD(alias:(NSString*)userId) {
+    [[SEGAnalytics sharedAnalytics] alias:userId];
+}
+
+/*
  https://segment.com/docs/libraries/ios/#track
  */
 RCT_EXPORT_METHOD(track:(NSString*)event properties:(NSDictionary *)properties) {
     [[SEGAnalytics sharedAnalytics] track:event properties:properties];
 }
+
 /*
  https://segment.com/docs/libraries/ios/#screen
  */

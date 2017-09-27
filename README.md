@@ -1,21 +1,23 @@
-# React Native Analytics
+# React Native Segment SDK
 
-Written by Tal Kain <tal@kain.net>, Tony Xiao <tonyx.ca@gmail.com> and other contributors.
+Updates the existing React Native Analytics project with support for Alias API.
+
+Originally written by Tal Kain <tal@kain.net>, Tony Xiao <tonyx.ca@gmail.com> and other contributors.
 
 Based on Segment (https://segment.com) Analytics project.
 See [iOS SDK](https://github.com/segmentio/analytics-ios) and [Android SDK](https://github.com/segmentio/analytics-android).
 
 
 ## iOS Installation
-1. Download and install the npm package by running `npm install --save react-native-analytics`
+1. Download and install the npm package by running `npm install --save react-native-segment-sdk`.
 2. In your Podfile, add `pod "Analytics"` to your project.
 3. Inside Xcode (make sure you've opened your `.xcworkspace` file), go to the project navigator and right click `Libraries` -> `Add Files to [your project's name]`.
-4. Go to `node_modules/react-native-analytics/ios` -> and choose the `RNAnalytics` folder.
+4. Go to `node_modules/react-native-segment-sdk/ios` -> and add `RNSegmentIOAnalytics.h` and `RNSegmentIOAnalytics.m` to your project.
 5. Make sure your project links to *libAnalytics.a* (The libraries should be listed under "Build Phases -> Link Binary With Libraries". Should happen automatically if you use cocoapods).
 
 ## Android Installation
-1. Download and install the npm package by running `npm install --save react-native-analytics`
-2. If using [rnpm](https://github.com/rnpm/rnpm), run `rnpm link`. Otherwise add to `android/app/src/main/java/com/your-app-name/MainActivity.java`:
+1. Download and install the npm package by running `npm install --save react-native-segment-sdk`.
+2. If using [rnpm](https://github.com/rnpm/rnpm), run `rnpm link`. Otherwise add to `android/app/src/main/java/com/<your-app-name>/MainActivity.java`:
 
 ```java
 import com.facebook.react.ReactPackage;
@@ -31,14 +33,15 @@ import com.smore.RNSegmentIOAnalytics.RNSegmentIOAnalyticsPackage; // <-- add th
 
 ## Usage sample
 ```javascript
-import Analytics from 'react-native-analytics'
+import Analytics from 'react-native-segment-sdk'
 
 const segmentIOWriteKey = "SEGMENT_IO_WRITE_KEY"
 const flushEverySecondsCount = 1
 Analytics.setup(segmentIOWriteKey, flushEverySecondsCount)
-Analytics.identify("testing", {"name":"test name"})
-Analytics.track("test track", {"name":"test track with name"})
-Analytics.screen("test screen", {"screenType":"SCREEN NAME"})
+Analytics.identify("abc123", {"email":"john.smith@aol.com"})
+Analytics.alias("abc123")
+Analytics.track("Item Purchased", {"item":"Sword of Heracles", "revenue":2.95})
+Analytics.screen("Photo Feed", {"Feed Type":"private"})
 Analytics.flush()
 Analytics.reset()
 ```
