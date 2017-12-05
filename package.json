@@ -1,6 +1,6 @@
 {
   "name": "react-native-segment-sdk",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The Analytics API you've always wanted. Now for React Native. Powered by Segment.",
   "repository": {
     "type": "git",
@@ -43,6 +43,6 @@
   ],
   "homepage": "https://github.com/CampusJob/react-native-segment-sdk",
   "peerDependencies": {
-    "react-native": ">=0.7.0"
+    "react-native": ">=0.50.0"
   }
 }
